@@ -97,14 +97,14 @@ The created DRAM simulator then has to be fed with commands, e.g.
 #include <DRAMPower/command/Command.h>
 
 std::vector<Command> testPattern = {
-{  0, CmdType::ACT,  { 0, 0, 0 }},
-{ 15, CmdType::RD ,  { 0, 0, 0 }},
-{ 35, CmdType::PRE,  { 0, 0, 0 }},
-{ 35, CmdType::END_OF_SIMULATION },
+    {  0, CmdType::ACT,  { 0, 0, 0 }},
+    { 15, CmdType::RD ,  { 0, 0, 0 }},
+    { 35, CmdType::PRE,  { 0, 0, 0 }},
+    { 35, CmdType::END_OF_SIMULATION },
 };
 
 for (const auto& command : testPattern) {
-dram.doCommand(command);
+    dram.doCommand(command);
 };
 ```
 
