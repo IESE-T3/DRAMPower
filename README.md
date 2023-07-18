@@ -77,7 +77,7 @@ Therefore all the following examples will refer to them with the implied usage o
 using namespace DRAMPower;
 ```
 
-To use the actual DRAM calculations, first a memspec has to be supplied. Refer to """test""" for example memspecs.
+To use the actual DRAM calculations, first a memspec has to be supplied. Some example memspecs are supplied in the [tests directory](https://github.com/tukl-msd/DRAMPower/tree/master/tests/tests_drampower/resources).
 An example snippet to initialize a DDR4 based DRAM spec can look like this:
 
 ```cpp
